@@ -1,3 +1,55 @@
-body {
+html body {
     background-color: #0f0f0f;
+    animation: fadeInAnimation ease 3s;
+    scroll-behavior: smooth;
+}
+
+.logo img {
+    width: 5%;
+    position: fixed;
+    top: 0px;
+}
+
+#linkedin, #github, #email {
+    width: 3%;
+    border-radius: 50%;
+}
+
+#top {
+    position: absolute;
+    width: 100%;
+}
+
+.container {
+    margin-top: 40vh;
+    color: white;
+}
+
+.name {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 9vh;
+}
+
+.name:hover {
+    color: #808080;
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    text-decoration: none;
+    margin: 1%;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
