@@ -10,12 +10,12 @@ html body {
     top: 0px;
 }
 
-#linkedin, #github, #email {
+#linkedin, #github, #email, #arrow, #arrowup {
     width: 3%;
     border-radius: 50%;
 }
 
-#top {
+#home {
     position: absolute;
     width: 100%;
 }
@@ -38,11 +38,120 @@ html body {
 
 .links {
     text-align: center;
+    margin: 1%;
 }
 
 .links a {
     text-decoration: none;
     margin: 1%;
+}
+
+.container .main {
+    height: 60vh;
+}
+
+.down {
+    text-align: center;
+    margin-top: 28vh;
+}
+
+#about {
+    color: #808080;
+    text-align: center;
+    font-family: SansBold;
+    font-size: 4vh;
+    letter-spacing: 0.2vh;
+    animation: typing 4s steps(31), blink .13s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 36ch;
+    animation-iteration-count: infinite;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.wrapper {
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+}
+
+#kwan {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.right {
+    text-align: right;
+}
+
+.intro {
+    font-family: SansReg;
+    margin-left: 10vh;
+    font-size: 3vh;
+}
+
+.experience {
+    font-family: SansReg;
+    margin-left: 5vh;
+    font-size: 3vh;
+}
+
+.rowbottom {
+    margin-bottom: 20vh;
+    text-align: center;
+}
+
+.bottom {
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+.title {
+    color: #808080;
+    text-align: center;
+    font-family: SansBold;
+    font-size: 4vh;
+    letter-spacing: 0.2vh;
+    margin-bottom: 5vh;
+}
+
+#role {
+    margin-left: 5vh;
+    color: #808080;
+}
+
+.subtitle {
+    font-family: SansBold;
+    font-size: 3vh;
+    letter-spacing: 0.2vh;
+}
+
+.center {
+    text-align: center;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+}
+      
+ @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+ }
+
+@font-face {
+    font-family: "SansBold";
+    src: url("font/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "SansReg";
+    src: url("font/OpenSans-Regular.ttf");
 }
 
 @keyframes fadeInAnimation {
