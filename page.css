@@ -68,7 +68,6 @@ html body {
 }
 
 .wrapper {
-    /*This part is important for centering*/
     display: grid;
     place-items: center;
 }
