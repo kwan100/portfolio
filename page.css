@@ -13,6 +13,10 @@ html body {
     border-radius: 50%;
 }
 
+#icon {
+    width: 35px;
+}
+
 .icons img, .arrow, .card-body img {
     width: 35px;
     border-radius: 50%;
