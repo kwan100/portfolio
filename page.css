@@ -114,7 +114,7 @@ html body {
     font-weight: bold;
 }
 
-#icon:hover, .arrow:hover, .icons img:hover {
+#name-logo:hover, .arrow:hover, .icons img:hover {
     opacity: 0.25;
     transition-duration: 0.4s;
 }
