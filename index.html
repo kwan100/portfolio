@@ -22,26 +22,28 @@
             <div class="name">
                 Kwan Baek
             </div>
-            <div class="links">
+            <div class="icons">
                 <a href="https://www.linkedin.com/in/kwan-baek-b35962207/">
-                    <img id="linkedin" src="images/linkedin.png">
+                    <img src="images/linkedin.png">
                 </a>
                 <a href="https://github.com/kwan100">
-                    <img id="github" src="images/github.png">
+                    <img src="images/github.png">
                 </a>
                 <a href="mailto:kwanwoo100@gmail.com">
-                    <img id="email" src="images/email.png">
+                    <img src="images/email.png">
                 </a>
                 <a href="documents/Resume-Baek2022.pdf">
-                    <img id="resume" src="images/resume.png">
+                    <img src="images/resume.png">
                 </a>
             </div>
             <div class="down">
-                <a href="#about">
-                    <img id="arrow" src="images/arrow.png">
+                <a href="#scroll">
+                    <img class="arrow" src="images/arrow.png">
                 </a>
             </div>
         </div>
+
+        <div id="scroll"></div>
         
         <div class="wrapper">
             <div id="about">
@@ -49,11 +51,11 @@
             </div>
         </div>
         
-        <div class="rowbottom row justify-content-center">
-            <div class="col-md-4 col-12">
+        <div class="margin row justify-content-center">
+            <div class="col-md-3 col-12">
                 <img id="kwan" src="images/kwan.png">
             </div>
-            <div class="intro col-md-7 col-12">
+            <div class="intro col-md-9 col-12">
                 I'm a 22 year old senior at the University of Southern California studying 
                 for my B.S. in Computer Science. I have an innate fascination with technology 
                 and a passion for expressing my creativity in most of my endeavors. My interests 
@@ -63,7 +65,7 @@
             </div>
         </div> 
 
-        <div class="rowbottom">
+        <div class="margin">
             <div class="title">
                 Experience
             </div>
@@ -91,79 +93,190 @@
             </div> 
         </div> 
 
-        <div class="project rowbottom">
+        <div class="margin">
             <div class="title">
                 Projects
             </div>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div id="projects" class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                     <div class="card text-bg-dark">
-                        <img src="images/cinesearch.png" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="project card-title">
-                                <a href="https://kwan100.github.io/CineSearch/">
-                                    CineSearch
+                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <a href="https://kwan100.github.io/popflix">
+                                    <img src="images/popflix.png" class="d-block w-100" alt="...">
                                 </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <a href="https://kwan100.github.io/popflix">
+                                    <img src="images/popflix2.png" class="d-block w-100" alt="...">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="subtitle card-title">
+                                Popflix
                             </h5>
-                            <p class="detail card-text">
-                                Created a website that uses Ajax and JavaScript to pull data from a database
-                                of movies, and has the capability of searching for any movie from within the 
-                                database. The title, release date, and synopsis are pulled from the database.
+                            <p class="card-text">
+                                Created a website that uses Ajax and JavaScript to display currently playing
+                                movies, and can search for any movie from the database.
                             </p>
-                            <a href="https://github.com/kwan100/CineSearch">
-                                <img id="github" src="images/github.png">
+                            <a class="icons" href="https://github.com/kwan100/popflix">
+                                <img src="images/github.png">
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card text-bg-dark">
-                        <img src="images/uscrecsports.png" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="project card-title">USC RecSports</h5>
-                            <p class="detail card-text">
-                            Contributed to an Android app that was designed to help with scheduling appointments
-                            at the rec centers at USC during COVID, when limited numbers of students were
-                            allowed at a time at the campus rec centers.
-                            </p>
-                            <a href="https://github.com/kwan100/Course-Projects/tree/main/CSCI-310/USC-RecApp">
-                                <img id="github" src="images/github.png">
-                            </a>
+                        <div id="carousel2" class="carousel slide" data-bs-ride="carousel2">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <a href="http://ec2-3-129-52-41.us-east-2.compute.amazonaws.com:3000/">
+                                    <img src="images/ontour.png" class="d-block w-100" alt="...">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <a href="http://ec2-3-129-52-41.us-east-2.compute.amazonaws.com:3000/">
+                                    <img src="images/ontour2.png" class="d-block w-100" alt="...">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card text-bg-dark">
-                        <img src="images/trojantrade.png" class="card-img-top">
+
                         <div class="card-body">
-                            <h5 class="project card-title">Trojan Trade</h5>
-                            <p class="detail card-text">
-                                Contributed to a Java website for buyers and sellers to communicate, log-in 
-                                system for saving personal information, and UI for students to be able to
-                                find and upload items to sell.
+                            <h5 class="subtitle card-title">OnTour</h5>
+                            <p class="card-text">
+                                Created the front end of OnTour, a startup website that contains
+                                crowd-sourced reviews about live performances. Gained experience contributing
+                                to a website using React.
                             </p>
-                            <a href="https://github.com/kwan100/Course-Projects/tree/main/CSCI-201/Trojan-Trade">
-                                <img id="github" src="images/github.png">
+                            <a class="icons" href="https://github.com/Matt033/OnTour">
+                                <img src="images/github.png">
                             </a>
                         </div>
                   </div>
                 </div>
                 <div class="col">
                     <div class="card text-bg-dark">
-                        <img src="images/kanye.png" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="project card-title">
-                                <a href="https://kwan100.github.io/All-About-Kanye-West/">
-                                    All About Kanye West
+                        <div id="carousel3" class="carousel slide" data-bs-ride="carousel3">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <a href="https://apps.apple.com/us/app/bmi-calculator/id6444819160">
+                                    <img src="images/bmipal.png" class="d-block w-100" alt="...">
                                 </a>
-                            </h5>
-                            <p class="detail card-text">
-                                Created a fan website using HTML/CSS/JavaScript and implementing SQL databases 
-                                to allow fans to select their favorite Kanye West songs and upload to the database
-                                for others to see. 
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <a href="https://apps.apple.com/us/app/bmi-calculator/id6444819160">
+                                    <img src="images/bmipal2.png" class="d-block w-100" alt="...">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="subtitle card-title">BmiPal</h5>
+                            <p class="card-text">
+                                Created and published an iOS app that calculates the user's 
+                                body mass index. Gained experience using Flutter and releasing
+                                an app to the app store. 
                             </p>
-                            <a href="https://github.com/kwan100/All-About-Kanye-West">
-                                <img id="github" src="images/github.png">
+                            <a class="icons" href="https://github.com/kwan100/BMI">
+                                <img src="images/github.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-bg-dark">
+                        <div id="carousel4" class="carousel slide" data-bs-ride="carousel4">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <a href="https://apps.apple.com/us/app/fortune-clicker/id6444913621">
+                                    <img src="images/fortune.png" class="d-block w-100" alt="...">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <a href="https://apps.apple.com/us/app/fortune-clicker/id6444913621">
+                                    <img src="images/fortune2.png" class="d-block w-100" alt="...">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="subtitle card-title">Fortune Clicker</h5>
+                            <p class="card-text">
+                                Created and published an iOS app using Flutter. Gained 
+                                experience in designing UI/UX and gaming components such 
+                                as leveling up and in-app purchases.
+                            </p>
+                            <a class="icons" href="https://github.com/kwan100/fortune-clicker">
+                                <img src="images/github.png">
                             </a>
                         </div>
                     </div>
@@ -171,45 +284,7 @@
             </div>
         </div> 
 
-        <div class="rowbottom">
-            <div class="skillstitle">
-                Relevant Skills
-            </div>
-            <div class="skills">
-                <div class="row justify-content-center">
-                    <div class="col-md-2 col-sm-3 col-6">
-                        <button type="button" class="btn btn-dark">C++</button>
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-6">
-                        <button type="button" class="btn btn-dark">Java</button>
-    
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-6">
-                        <button type="button" class="btn btn-dark">Python</button>
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-6">
-                        <button type="button" class="btn btn-dark">HTML</button>
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-6">
-                        <button type="button" class="btn btn-dark">CSS</button>
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-6">
-                        <button type="button" class="btn btn-dark">SQL</button>
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-6">
-                        <button type="button" class="btn btn-dark">JavaScript</button>
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-6">
-                        <button type="button" class="btn btn-dark">Flutter</button>
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-6">
-                        <button type="button" class="btn btn-dark">Android Studio</button>
-                    </div>
-                </div> 
-            </div>
-        </div> 
-
-        <div class="rowbottom">
+        <div class="margin">
             <div class="title">
                 Leadership Skills
             </div>
@@ -228,7 +303,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="leadership col-md-7 col-12">
+                <div class="col-md-7 col-12">
                     Trained in leadership and success skills through receiving coaching,
                     coaching others, and holding others accountable for short-term and long-term
                     commitments in peer-based leadership development teams.
@@ -236,52 +311,30 @@
             </div> 
         </div> 
 
-        <div class="arrowspace">
+        <div class="med-margin">
             <div class="title">
                 Contact Me
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-3 col-12">
-                    <div class="subtitle row">
-                        <div>
-                            <a href="https://www.linkedin.com/in/kwan-baek-b35962207/">
-                                LinkedIn
-                            </a>
-                        </div>
-                    </div>
-                    <div class="contact row">
-                        <div>
-                            Kwan Baek
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-12">
-                    <div class="subtitle row">
-                        <div>
-                            <a href="mailto:kwanwoo100@gmail.com">
-                                Email
-                            </a>
-                        </div>
-                    </div>
-                    <div class="contact row">
-                        <div>
-                            kwanwoo100@gmail.com
-                        </div>
-                    </div>
-                </div>
-            </div> 
+            
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/kwan-baek-b35962207/">
+                    <img src="images/linkedin.png">
+                </a>
+                <a href="mailto:kwanwoo100@gmail.com">
+                    <img src="images/email.png">
+                </a>
+            </div>
         </div> 
 
-        <div class="bottom">
+        <div class="small-margin">
             <a href="#home">
-                <img id="arrowup" src="images/arrowup.png">
+                <img class="arrow" src="images/arrowup.png">
             </a>
         </div> 
         <div class="copyright">
             © 2022 Kwan Baek
         </div> 
-        <div class="rights bottom">
+        <div class="rights small-margin">
             All Rights Reserved
         </div> 
     </div>

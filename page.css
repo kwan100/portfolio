@@ -3,6 +3,7 @@ html body {
     background-color: #0f0f0f;
     animation: fadeInAnimation ease 3s;
     scroll-behavior: smooth;
+    font-size: 2.75vh;
 }
 
 .logo img {
@@ -12,8 +13,8 @@ html body {
     border-radius: 50%;
 }
 
-#linkedin, #github, #email, #resume, #arrow, #arrowup {
-    width: 30px;
+.icons img, .arrow, .card-body img {
+    width: 35px;
     border-radius: 50%;
 }
 
@@ -34,18 +35,18 @@ html body {
     letter-spacing: 0.2vh;
 }
 
-.links {
-    text-align: center;
+.icons {
     margin: 1%;
 }
 
-.links a {
+.icons a {
     text-decoration: none;
     margin: 1%;
 }
 
 .container .main {
     height: 60vh;
+    text-align: center;
 }
 
 .down {
@@ -58,7 +59,7 @@ html body {
     font-weight: bold;
     font-size: 4vh;
     letter-spacing: 0.2vh;
-    animation: typing 3.5s steps(14), blink .25s step-end infinite alternate;
+    animation: typing 3.5s steps(15), blink .233s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -73,7 +74,7 @@ html body {
 }
 
 #kwan {
-    width: 30%;
+    width: 40%;
     border-radius: 50%;
     margin-top: 5vh;
 }
@@ -82,21 +83,17 @@ html body {
     padding-top: 5vh;
 }
 
-.experience, .leadership, .intro {
-    font-size: 3vh;
-}
-
-.rowbottom {
+.margin {
     margin-bottom: 20vh;
     text-align: center;
 }
 
-.arrowspace {
+.med-margin {
     margin-bottom: 10vh;
     text-align: center;
 }
 
-.bottom {
+.small-margin {
     margin-bottom: 5vh;
     text-align: center;
 }
@@ -110,36 +107,22 @@ html body {
 }
 
 .subtitle {
-    font-size: 3vh;
-    letter-spacing: 0.2vh;
     font-weight: bold;
 }
 
-.contact {
-    font-size: 3vh;
-}
-
-.project {
-    letter-spacing: 0.2vh;
-    font-weight: bold;
-    font-size: 3vh;
-}
-
-.detail {
-    letter-spacing: 0vh;
-    font-weight: normal;
-    font-size: 3vh;
-}
-
-#icon:hover, .card img:hover, .title:hover, #about:hover, #arrow:hover, #arrowup:hover, .name:hover, #github:hover, #email:hover, #linkedin:hover, .skillstitle:hover, #resume:hover {
+#icon:hover, .arrow:hover, .icons img:hover {
     opacity: 0.25;
+    transition-duration: 0.4s;
 }
 
-.skillstitle {
-    text-align: center;
-    font-weight: bold;
-    font-size: 4vh;
-    letter-spacing: 0.2vh;
+#projects {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.card-img:hover {
+    filter: brightness(60%);
+    transition-duration: 0.4s;
 }
 
 .skills {
@@ -152,12 +135,10 @@ html body {
 
 .copyright {
     text-align: center;
-    font-size: 2.5vh;
 }
 
 .rights {
     opacity: 0.25;
-    font-size: 2.5vh;
 }
 
 .subtitle a, .experience a, .project a {
